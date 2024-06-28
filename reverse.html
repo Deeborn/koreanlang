@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="content">
+            <form action="">
+                <div class="content__word">Word</div>
+                <input class="content__input" type="text">
+                <button class="content__button">Next</button>
+                <a class="reverse" href="index.html">Наоборот</a>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script>
+    let screenWord = document.querySelector('.content__word')
+let input = document.querySelector('.content__input')
+let button = document.querySelector('.content__button')
+let rand = Math.floor(Math.random() * 10)
+let translateText = document.querySelector('.content__translate')
+    const reverse = [
+    {
+        name: '내집',
+        translate: 'место проживания'
+    },
+    {
+        name: '건물',
+        translate: 'здание'
+    },
+    {
+        name: '장소',
+        translate: 'место'
+    },
+    {
+        name: '입구',       
+        translate: 'вход'
+    },
+    {
+        name: '출구',
+        translate: 'выход'
+    },
+    {
+        name: '센터',
+        translate: 'центр'
+    },
+    {
+        name: '마당',
+        translate: 'двор'
+    },
+    {
+        name: '지붕',
+        translate: 'крыша'
+    },
+    {
+        name: '울타리',
+        translate: 'забор'
+    },
+    {
+        name: '땅',
+        translate: 'участок'
+    },
+]
+
+
+    
+    screenWord.innerHTML = reverse[rand].name
+    
+button.addEventListener('click', (e) => {
+
+    let valueOfInput = input.value
+    if(valueOfInput === reverse[rand].translate){
+        rand = Math.floor(Math.random() * 3)
+        screenWord.innerHTML = reverse[rand].name
+        translateText.innerHTML = ''
+            input.value = ''
+    }
+    else{
+        console.log('не правильно')
+        let translateText = document.querySelector('.content__translate')
+            translateText.innerHTML = words[rand].translate
+            input.value = ''
+    }
+    e.preventDefault()
+
+    console.log(valueOfInput)
+
+})
+</script>
+</html>
