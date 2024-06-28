@@ -13,6 +13,7 @@
             <form action="">
                 <div class="content__word">Word</div>
                 <input class="content__input" type="text">
+                <div class="content__translate"></div>
                 <button class="content__button">Next</button>
                 <a class="reverse" href="index.html">Наоборот</a>
             </form>
@@ -85,7 +86,7 @@ e.preventDefault()
     else{
         console.log('не правильно')
         let translateText = document.querySelector('.content__translate')
-            translateText.innerHTML = words[rand].translate
+            translateText.innerHTML = translate[rand].translate
             input.value = ''
     }
     
