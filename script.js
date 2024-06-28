@@ -57,7 +57,7 @@ const words = [
         e.preventDefault()
         let valueOfInput = input.value
         if(valueOfInput === words[rand].translate){
-            rand = Math.floor(Math.random() * 3)
+            rand = Math.floor(Math.random() * 10)
             screenWord.innerHTML = words[rand].name
             translateText.innerHTML = ''
             input.value = ''
