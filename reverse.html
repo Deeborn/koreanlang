@@ -78,7 +78,7 @@ button.addEventListener('click', (e) => {
 e.preventDefault()
     let valueOfInput = input.value
     if(valueOfInput === reverse[rand].translate){
-        rand = Math.floor(Math.random() * 3)
+        rand = Math.floor(Math.random() * 10)
         screenWord.innerHTML = reverse[rand].name
         translateText.innerHTML = ''
             input.value = ''
