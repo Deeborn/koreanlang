@@ -74,7 +74,7 @@ let translateText = document.querySelector('.content__translate')
     screenWord.innerHTML = reverse[rand].name
     
 button.addEventListener('click', (e) => {
-
+e.preventDefault()
     let valueOfInput = input.value
     if(valueOfInput === reverse[rand].translate){
         rand = Math.floor(Math.random() * 3)
@@ -88,7 +88,7 @@ button.addEventListener('click', (e) => {
             translateText.innerHTML = words[rand].translate
             input.value = ''
     }
-    e.preventDefault()
+    
 
     console.log(valueOfInput)
 
