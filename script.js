@@ -5,44 +5,44 @@ let rand = Math.floor(Math.random() * 3)
 let translateText = document.querySelector('.content__translate')
 const words = [
     {
-        name: 'место проживания',
-        translate: '내집'
+        name: 'деревня',
+        translate: '마을'
     },
     {
-        name: 'здание',
-        translate: '건물'
+        name: 'школа',
+        translate: '학교'
     },
     {
-        name: 'место',
-        translate: '장소'
+        name: 'универ',
+        translate: '대학'
     },
     {
-        name: 'вход',
-        translate: '입구'
+        name: 'театр',
+        translate: '극장'
     },
     {
-        name: 'выход',
-        translate: '출구'
+        name: 'церковь',
+        translate: '교회에'
     },
     {
-        name: 'центр',
-        translate: '센터'
+        name: 'ресторан',
+        translate: '레스토랑'
     },
     {
-        name: 'двор',
-        translate: '마당'
+        name: 'кафе',
+        translate: '카페'
     },
     {
-        name: 'крыша',
-        translate: '지붕'
+        name: 'отель',
+        translate: '호텔'
     },
     {
-        name: 'забор',
-        translate: '울타리'
+        name: 'банк',
+        translate: '은행'
     },
     {
-        name: 'участок',
-        translate: '땅'
+        name: 'кинотеатр',
+        translate: '영화'
     },
 
 ]
