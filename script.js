@@ -5,44 +5,44 @@ let rand = Math.floor(Math.random() * 3)
 let translateText = document.querySelector('.content__translate')
 const words = [
     {
-        name: 'больница',
-        translate: '병원'
+        name: 'делать',
+        translate: '하다'
     },
     {
-        name: 'полиция',
-        translate: '학교'
+        name: 'быть',
+        translate: '있다'
     },
     {
-        name: 'почта',
-        translate: '우체국'
+        name: 'говорить',
+        translate: '말하다'
     },
     {
-        name: 'вокзал',
-        translate: '역'
+        name: 'приходить',
+        translate: '오다'
     },
     {
-        name: 'аэропорт',
-        translate: '공항'
+        name: 'идти',
+        translate: '가다'
     },
     {
-        name: 'магазин',
-        translate: '가게'
+        name: 'видеть',
+        translate: '보다'
     },
     {
-        name: 'аптека',
-        translate: '조제'
+        name: 'ждать',
+        translate: '기다리다'
     },
     {
-        name: 'рынок',
-        translate: '시장'
+        name: 'встречать',
+        translate: '만나다'
     },
     {
-        name: 'офис',
-        translate: '사무실'
+        name: 'жить',
+        translate: '살다'
     },
     {
-        name: 'компания',
-        translate: '회사'
+        name: 'знать',
+        translate: '알다'
     },
 
 ]
